@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fitlifefavi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Zakup Karnetu - Klub Fitness FitLife</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="fitlife.png" alt="Fitlife" height="50px" width="70px"></a>
+        <h1>Klub fitness FitLife Miejsce ludzi aktywnych</h1>
+    </header>
+    <main>
+        <section id="zakup">
+            <h2>Potwierdzenie zakupu karnetu</h2>
+            <div id="potwierdzenie"></div>
+            <button onclick="powrotDoStronyGlownej()">Powrót do strony głównej</button>
+            <button onclick="wyswietlGrafik()">Wyświetl grafik zajęć</button>
+        </section>
+    </main>
+    <footer id="kontakt">
+        <h2>Skontaktuj się z nami</h2>
+        <p>E-mail: info@fitlife.com</p>
+    </footer>
+
+    <script>
+        // Funkcja do pobierania parametrów z adresu URL
+        function pobierzParametr(nazwa) {
+            nazwa = nazwa.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + nazwa + "=([^&#]*)");
+            var wynik = regex.exec(location.search);
+            return wynik === null ? "" : decodeURIComponent(wynik[1].replace(/\+/g, " "));
+        }
+
+        // Funkcja do wyświetlania potwierdzenia zakupu
+        function wyswietlPotwierdzenie(karnet) {
+            var potwierdzenieDiv = document.getElementById("potwierdzenie");
+            var potwierdzenie = "Dziękujemy za zakup karnetu " + karnet + ". Twój karnet zostanie aktywowany wkrótce.";
+            potwierdzenieDiv.innerHTML = potwierdzenie;
+        }
+
+        // Pobranie parametru 'karnet' z adresu URL
+        var rodzajKarnetu = pobierzParametr("karnet");
+
+        // Wyświetlenie potwierdzenia zakupu
+        if (rodzajKarnetu !== "") {
+            wyswietlPotwierdzenie(rodzajKarnetu);
+        } else {
+            // Obsługa braku parametru 'karnet' w adresie URL
+            var potwierdzenieDiv = document.getElementById("potwierdzenie");
+            potwierdzenieDiv.innerHTML = "Błąd! Nie można zrealizować zakupu.";
+        }
+        function powrotDoStronyGlownej() {
+            window.location.href = "index.html";
+        }
+        function wyswietlGrafik() {
+            window.location.href = "strefaklienta.html";
+        }
+    </script>
+</body>
+</html>

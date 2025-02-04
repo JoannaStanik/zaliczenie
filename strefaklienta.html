@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fitlifefavi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Strefa klienta - Klub Fitness FitLife</title>
+</head>
+<body>
+    <header>
+        <script src="js/accessibility.js"></script>
+        <a href="index.html" tabindex="1"><img src="images/logoFit.png" alt="Fitlife" height="100px" width="100px"></a>
+        <h1>Klub fitness FitLife Nie ma wymówek, są tylko możliwości</h1>
+        <div id="accessibility-controls">
+            <button onclick="increaseFontSize()" tabindex="2" aria-label="Powiększ czcionkę"><img class="access" src="images/a_10138116.png" alt="powieksz"></button>
+            <button onclick="decreaseFontSize()" tabindex="3" aria-label="Pomniejsz czcionkę"><img class="access" src="images/a_101.png" alt="zmniejsz"></button>
+            <button onclick="toggleGrayscale()" tabindex="4" aria-label="Tryb skali szarości"><img class="access" src="images/grayscale.png" alt="Skala szarości"></button>
+            <button onclick="toggleHighContrast()" tabindex="5" aria-label="Kontrast"><img class="access" src="images/contrast1.png" alt="kontrast"></button>
+            <button onclick="toggleYellowContrast()" tabindex="6" aria-label="Tryb wysokiego kontrastu"><img class="access" src="images/contrastYellow.png" alt="Wysoki kontrast"></button>
+            <button onclick="startReading()" tabindex="7" aria-label="Czytaj stronę"><img class="access" src="images/speak.png" alt="Czytaj stronę"></button>
+            <button onclick="stopReading()" tabindex="8" aria-label="Zatrzymaj czytanie"><img class="access" src="images/mute_709561.png" alt="Zatrzymaj czytanie"></button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" tabindex="5">Strona Główna</a></li>
+            <li><a href="oferta.html" tabindex="6">Oferta</a></li>
+            <li><a href="cennik.html" tabindex="7">Cennik</a></li>
+            <li><a href="strefaklienta.html" tabindex="8">Strefa klienta</a></li>
+            <li><a href="galeria.html" tabindex="-1">Galeria</a></li>
+        </ul>
+    </nav>
+    <main>
+        <table>
+            <caption>Grafik</caption>
+            <thead>
+                <tr>
+                    <th>Godzina</th>
+                    <th>Poniedziałek</th>
+                    <th>Wtorek</th>
+                    <th>Środa</th>
+                    <th>Czwartek</th>
+                    <th>Piątek</th>
+                    <th>Sobota</th>
+                    <th>Niedziela</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 - 9:00</td>
+                    <td class="class-cell">Yoga <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Pilates <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Spinning <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Body BPU <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Streching <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Salsation <br><button class="sign-up-btn">Zapisz się</button></td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td class="class-cell">Jumping Frog <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Fitball <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Yoga <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Spinning <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Jumping Frog <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 13:00</td>
+                    <td class="class-cell">Stretching <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Kickboxing <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Pilates <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Functional Training <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:00 - 17:00</td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Yoga <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Jumping Frog <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Body BPU <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Spinning <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18:00 - 19:00</td>
+                    <td class="class-cell">Fitball <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Pilates <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Zumba <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Stretching <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td class="class-cell">Functional Training <br><button class="sign-up-btn">Zapisz się</button></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <section id="login-register">
+            <h2>Logowanie / Rejestracja</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'login')">Logowanie</button>
+                <button class="tablinks" onclick="openTab(event, 'register')">Rejestracja</button>
+            </div>
+
+            <!-- Karta logowania -->
+            <div id="login" class="tabcontent">
+                <h3>Logowanie</h3>
+                <form action="login.php" method="post">
+                    <label for="username">Nazwa użytkownika:</label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="password">Hasło:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                    <button type="submit">Zaloguj się</button>
+                </form>
+            </div>
+
+            <!-- Karta rejestracji -->
+            <div id="register" class="tabcontent">
+                <h3>Rejestracja</h3>
+                <form action="register.php" method="post">
+                    <label for="new-username">Nowa nazwa użytkownika:</label><br>
+                    <input type="text" id="new-username" name="new-username" required><br>
+                    <label for="new-email">Adres email:</label><br>
+                    <input type="email" id="new-email" name="new-email" required><br>
+                    <label for="new-password">Nowe hasło:</label><br>
+                    <input type="password" id="new-password" name="new-password" required><br>
+                    <button type="submit">Zarejestruj się</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="kontakt" aria-labelledby="kontakt">
+        <div class="kontakt1">
+            <h2>Skontaktuj się z nami</h2>
+            <p>info@fitlife.com</p>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.9846110071953!2d18.653296112439087!3d50.2361924026487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471136c2c3a411ad%3A0xef8d33f4e8ee32d6!2sWincentego%20Witosa%2012%2C%2044-100%20Knur%C3%B3w!5e0!3m2!1spl!2spl!4v1730824805308!5m2!1spl!2spl" 
+                width="500" 
+                height="500" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="godziny_otwarcia"></div>
+            <h2>Godziny otwarcia</h2>
+                <ul>
+                    <li>Poniedziałek 6:00-22:30</li>
+                    <li>Wtorek 6:00-22:00</li>
+                    <li>Środa 6:00-22:30</li>
+                    <li>Czwartek 6:00-22:00</li>
+                    <li>Piątek  6:00-22:00</li>
+                    <li>Sobota  7:00-16:30</li>
+                    <li>Niedziela 8:00-16:00</li>
+                </ul>
+        </div>
+    </footer>
+    <script src="js/strefaklienta.js"></script>
+</body>
+</html>
